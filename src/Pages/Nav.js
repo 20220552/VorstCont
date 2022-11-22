@@ -68,7 +68,7 @@ export var NavOptions = function() {
             "&:hover": { "&.active": { color: "e65624" }, color: "e65624" }, "&.active": { color: "#e65624" }}}>Home</NavLink>
         </div>                    
         <div className="NavLink"> 
-      <NavLink to="Portfolio/PortfolioList" css={{
+      <NavLink to="/PortfolioList" css={{
             color: "white",
             "&:hover": { "&.active": { color: "e65624" }, color: "e65624" }, "&.active": { color: "#e65624" }}}>Portfolio</NavLink>
       </div>                  

@@ -37,12 +37,15 @@ const PortfolioList = () => {
                             </header>
                             <div className="post-description">
                             <p>{post.fields.slug}
-                            </p>
-                            <NavLink to={`selectedItem/${post.sys.id}`} className="button button1">
+                            </p><br/><br/><br/><br/>
+                            <NavLink to={`/selectedItem/${post.sys.id}`}>
                                 Read More
-                            </NavLink>
+                            </NavLink><br/><br/><br/>
+                            <NavLink to="/Home">This link works as expected</NavLink>
+                            <br/><br/><br/><br/><br/>
                             </div>
                         </section>
+                        
                         ))}
     </div>
   )

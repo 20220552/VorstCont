@@ -2,9 +2,9 @@
 
 
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Redirect } from "react-router-dom";
 
-import Button from 'react-bootstrap/Button';
+
 
 import Nav from './Pages/Nav';
 import Home from './Pages/Home'
@@ -18,21 +18,18 @@ import PortfolioItem from './Pages/Portfolio/PortfolioItem'
 function App() {
   return (
     <div className="App">
-        
-        
-        
         <BrowserRouter>
-
         <Routes>
+        <Route path="/selectedItem/:id" element={<PortfolioItem />} />
         <Route path="/" element={<Nav />}> {/*top route will load and be used to define links*/}
         <Route path="/Home" element={<Home />} />
         <Route path="About" element={<About />} /> 
-        <Route path="Portfolio/PortfolioList" element={<PortfolioList />} />
+        <Route path="PortfolioList" element={<PortfolioList />} />
         <Route path="Contact" element={<Contact />} > 
-        <Route path="PortfolioItem/selectedItem/:id" element={<PortfolioItem />} />
-              
+        
         </Route>
         <Route path="/" element={<Home />} />
+        
       </Route>
     </Routes>
   </BrowserRouter>
