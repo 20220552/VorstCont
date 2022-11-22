@@ -1,0 +1,430 @@
+
+/*
+
+
+
+
+
+
+    SEO
+
+
+
+
+
+  */
+
+
+a:link, a:visited, a:active {
+  color:#ffffff;;
+  text-decoration: none; 
+}
+
+
+a:hover {
+  color:#e65624;   
+}
+
+
+.App {
+  
+  background-color: #0d1929;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+  
+  
+
+}
+
+
+/*//////////
+///   Nav Page
+//////////*/
+.Nav-wrapper {
+
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 6vw;
+
+}
+
+.pc-display {
+  display: flex;
+  flex-direction: row;
+
+}
+.spacer-nav-pc {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  max-width: 35%;
+}
+
+.logo-nav-pc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5vw;
+}
+.logo-pc {  
+  margin-top: 7vw;
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.nav-links { /* targets div with all navlinks inside */
+  margin-top: 5vw;
+  margin-left: 5vw;
+  text-align: left;
+  font-weight: 600;
+}
+.NavLink { /*targets indivdual links*/
+
+}
+.nav-options { /*targets <NavOptions /> div */
+  margin-left: 3rem;
+  font-size: 2vw;
+}
+
+.spacer-img {/*targets img element*/
+  height: 100vh;  
+  object-fit: contain;
+}
+
+.outlet-area-pc {
+  width: 60%;
+  margin-left: auto;
+  font-size: 0.9vw;
+}
+.outlet-pc { /*targets <Outlet /> */
+  
+}
+.mob-display {
+  display: none;
+}
+.menu-bar-div {
+  display: none;
+}
+
+/*////////// 
+///   Home Page
+//////////*/
+
+.home-wrapper {
+  height: 100vh;
+  width: 100vh;
+}
+.carousel-item { /*targets coontent inside like title */
+  height: 100vh;
+  width: 100vh;
+  
+}
+.carousel-container {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+}
+
+.splash-pic {
+  object-fit: contain;
+  height:100%;
+}
+.home-mob {
+  display: none;
+}
+/*//////////
+///   Portfolio page
+//////////*/
+.port-item {
+  padding-top: 2vw;
+  padding-left:2vw;
+  padding-right:2vw;
+  padding-bottom: 1vw;
+  text-align: left;
+}
+.port-images {
+  display: flex;
+  flex-direction: row;
+  margin-left:2rem;
+  margin-right:2rem;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.portimage {
+  width: 100%;
+  object-fit: contain;
+}
+.port-title {
+  font-weight: 700;
+  color:#e65624;
+}
+.port-desc {
+
+}
+/*//////////
+///   About Us
+//////////*/
+/* Create three equal columns that floats next to each other */
+.about-pc {
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+}
+.values-div-pc {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+
+}
+.values-pc {
+  margin: auto; 
+}
+
+.about-column {
+  float: left;
+  width: 33.33%;
+  padding-left:0.5vw;
+  padding-right: 0.5vw;  
+}
+.about-row {
+  display: table;
+  clear: both;
+
+}
+.bios-pc {
+  display: table;
+  clear: both;
+  margin:auto;
+}
+/*target each image with .staff-pics*/
+.staff-pics {
+  width: 6rem;
+  object-fit: contain;
+}
+.bio-mob-text {
+  display: none;
+}
+.hidden-div {
+  max-width: 80%;
+  margin: auto;
+}
+/*//////////
+///   Contact Us
+//////////*/
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+}
+.email-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.contact-details {
+  text-align: left;
+  padding-left: 2rem;
+}
+.contact-gmap {
+  padding-top:1rem;
+}
+/*//////////
+///   Mobile
+//////////*/
+@media screen and (max-width: 950px) {
+  .App {
+  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow: scroll;
+
+  }
+/*//////////
+///   Nav Mobile
+//////////*/
+  .Nav-wrapper {
+    width:100%;
+
+    object-fit: contain;
+  }
+  .pc-display {
+    display: none;
+  }
+  .mob-display {
+    display: contents;   
+    display: flex;
+    flex-direction: row;
+  }
+  .logo-div-pc {
+    display: flex;
+    flex-direction: row;
+    min-height: 5%;
+    position: fixed;
+    pointer-events: none;
+  }
+  .logo-mob { /* targets image*/
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  
+  }
+  .menu-bar-div {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    
+    height: 2rem;
+    width: 100%;
+    padding-top: 10vw;
+    padding-left:7vw;
+   
+    gap: 3rem;
+    color: #e65624;
+    font-weight: 600;
+    font-size: 7vw;
+
+  }
+  #menubars {
+    padding-top: 1.7vw;
+  }
+  .mob-nav-col {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    object-fit: contain;
+  }
+  
+  .outlet-area-mob {
+    font-size: 2.5vw;
+  }
+
+  .spacer-img-mob {
+    height: 100vh;
+    object-fit: contain;
+  }
+
+    /*//////////
+    ///   Home Mobile
+    //////////*/
+  .home-mob {
+    display: contents;
+  }
+  .mob-NavOptions {
+    margin-top: 7rem;
+    margin-left: 20vw;
+    font-size: 7vw;
+  }
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 10vw;
+  }
+  .home-pc {
+    display: none;
+  }
+    /*//////////
+    ///  Portfolio Mobile
+    //////////*/
+
+  .port-item {
+    padding-top: 15vw;
+    padding-left:2vw;
+    padding-right:1vw;
+    padding-bottom: 1vw;
+    text-align: left;
+  }
+  .port-images {
+    display: flex;
+    flex-direction: row;
+    margin-left:0.5rem;
+    margin-right:0.5rem;
+    justify-content: space-evenly;
+    gap: 0.5rem;
+  }
+    /*//////////
+    ///  About Mobile
+    //////////*/
+  .hidden-div {
+    display:none;
+  }
+
+  .values-div-pc {
+    padding-top: 20vw;  
+  }
+  .about-column {
+    width: 100%;
+    font-size: 2vw;
+  }
+  .about-row {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    padding-top: 1rem;
+  }
+  .bios-pc {
+    display: flex;
+    flex-direction: column;
+    clear: both;
+    margin:auto;
+  }
+  .staff-pics {
+    width: 15vw;
+    object-fit: contain;
+  }
+  .bio-text-pc {
+    display: none;
+  }
+  .bio-mob-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .bio-mob-name-col {
+    flex-direction: column;
+  }
+  .bio-mob-text {
+    display: contents;
+    object-fit: none;
+    overflow: visible;
+    width:70%;
+  }
+    /*//////////
+    ///   Contact Mobile
+    //////////*/
+  .contact-row {
+    padding-top: 20vw;
+  }
+
+  @media screen and (max-width: 850px) {
+    
+    
+    
+
+    }
+  
+    
+
+  
+
+  
+}
+
+
